@@ -5,7 +5,7 @@ import java.util.List;
 public class Operaciones {
 	
         /**
-         * @param datos
+         * @param datos lista de lo numeros a calcular
          * @return media de los datos
          */
 	public static double media(List<Double> datos) {
@@ -18,7 +18,7 @@ public class Operaciones {
     }
 
     /**
-     * @param datos
+     * @param datos lista de lo numeros a calcular
      * @return desviacion estandar de los datos
      */
     public static double desviacion(List<Double> datos) {
