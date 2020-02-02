@@ -1,91 +1,101 @@
-# Project Title
+# SparkAppWeb
 
-One Paragraph of project description goes here
 
-## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+##Introduccion
+
+Desarrollo de una aplicacion web utilizando spark que permite calcular la media y la desviacion estandar 
 
 ## Status
 
 [![CircleCI](https://circleci.com/gh/USHIWAKA-SAMA/taller-arep.svg?style=svg)](https://app.circleci.com/jobs/github/USHIWAKA-SAMA/taller-arep)
 
-### Prerequisites
+### Prerequisitos
 
-What things you need to install the software and how to install them
+Verifique que Java está instalado
+```
+java version "1.8.0_60"
+Java(TM) SE Runtime Environment (build 1.8.0_60-b27)
+Java HotSpot(TM) 64-Bit Server VM (build 25.60-b23,
+mixed mode)
+```
+```
+java -version
+```
+Verifique que Maven está instalado
+```
+mvn --version
+```
+```
+Apache Maven 3.3.9
+(bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-
+10T11:41:47-05:00)
+Verifique que Git está instalado
+git --version
+git version 2.6.4
+```
+### Instalacion
+
+Primero clone el repositorio con el comando 
 
 ```
-Give examples
+git clone https://github.com/Drakocedo/SparkAppWeb.git
 ```
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+y compile el proyecto con el comando
 
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+mvn package
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+## Pruebas
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+Desde la carpeta
 ```
-Give an example
+\SparkAppWeb
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
+Para correr las pruebas ejecute el comando:
 ```
-Give an example
+mvn test
 ```
+
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Desde la carpeta
+```
+\SparkAppWeb
+```
 
-## Built With
+compile el proyecto con el comando
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+```
+mvn package
+```
+
+Para correr la aplicacion utilice el comando 
+```
+mvn exec:java -Dexec.mainClass="edu.escuelaing.arem.SparkWebApp"
+```
+
+## Herramientas
+
+* [Spark](http://sparkjava.com/) - A micro framework for creating web applications in Kotlin and Java 8 with minimal effort
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
+## Autor
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **David Caycedo** - *Initial work* - [Git](https://github.com/Drakocedo)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
-## License
+## Licencia
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
